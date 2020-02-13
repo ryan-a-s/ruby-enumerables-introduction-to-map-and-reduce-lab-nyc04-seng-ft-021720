@@ -63,6 +63,6 @@ def reduce_to_any_true(source_array)
   if !source_array.include?(false) || !source_array.include?(nil)
     return false
   else
-    return return
+    return true
   end
 end
