@@ -60,9 +60,11 @@ def reduce_to_all_true(source_array)
 end
 
 def reduce_to_any_true(source_array)
-  if !source_array.include?(false) || !source_array.include?(nil)
+  i = 0
+  if !source_array[i].include?(false) || !source_array[i].include?(nil)
     return false
   else
     return true
   end
+  i += 1
 end
